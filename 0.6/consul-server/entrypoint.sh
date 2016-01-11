@@ -6,4 +6,4 @@ if ! [ -z $IP ]; then
   $IP_OPT="-advertise $IP"
 fi
 
-exec /bin/consul agent -server -config-dir=/config $IP_OPT
+exec /bin/consul agent -server -config-dir=/config $IP_OPT $*
